@@ -1,0 +1,19 @@
+#dockerfile for vncc-project
+version: "3.1"
+
+services:
+  bot:
+    image: bot-client:latest
+    restart: always
+    ports:
+      - 443:443
+      - 80:80
+  model:
+    image: modelserving:latest
+#   ports:
+#      - 8080:8080
+#      - 8081:8081
+#      - 8082:8082
+#      - 7070:7070
+#      - 7071:7071
+  
